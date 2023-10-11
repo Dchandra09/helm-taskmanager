@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: chandrad9/helloworld-backend:v2.1
+  repository: chandrad9/helloworld-backend:v2.2
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v2.1"
+  tag: "v2.2"
 
 imagePullSecrets: []
 nameOverride: ""
