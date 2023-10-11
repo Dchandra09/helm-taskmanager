@@ -43,7 +43,7 @@ spec:
               value: mydb
           ports:
             - name: mysql
-              containerPort: 3307
+              containerPort: 3306
               #protocol: TCP
           #livenessProbe:
           #  httpGet:

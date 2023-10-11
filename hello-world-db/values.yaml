@@ -51,7 +51,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 3307
+  port: 3306
 
 ingress:
   enabled: false
