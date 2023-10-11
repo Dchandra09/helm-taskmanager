@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: chandrad9/helloworld-backend:v2.0
+  repository: chandrad9/helloworld-backend:v2.1
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v2.0"
+  tag: "v2.1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -40,7 +40,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 8080
 
 ingress:
