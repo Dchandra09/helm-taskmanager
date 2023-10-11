@@ -14,10 +14,15 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-mysqlRootPassword: root
-mysqlUser: admin
-mysqlPassword: admin
-mysqlDatabase: mydb
+#mysqlRootPassword: root
+MYSQL_USER: admin
+MYSQL_PASSWORD: admin
+MYSQL_DATABASE: mydb
+
+MYSQL_ROOT_PASSWORD: root
+MYSQL_ALLOW_EMPTY_PASSWORD: 1
+MYSQL_RANDOM_ROOT_PASSWORD: 1
+
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -46,7 +51,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 3307
+  port: 3306
 
 ingress:
   enabled: false
